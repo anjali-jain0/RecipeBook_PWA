@@ -8,6 +8,7 @@
 	<link rel = 'manifest' href = '/manifest.json' >
 	<link rel = 'apple-touch-icon' href = '/icons/icon-96x96.png'>
 	<meta name = 'apple-mobile-web-app-status-bar' content='#aa7700'>
+  <meta name = 'theme-color' content = '#FFE1C4'>
 	<title>Food_U_Love</title>
 </head>
 <body className = 'grey lighten-4'>
@@ -32,47 +33,11 @@
  </ul>
 
  <div class="recipes container grey-text text-darken-1">
-    <div class="card-panel recipe white row">
-      <img src="/images/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/images/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/images/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/images/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-  </div>
+  <h6 class='center'> Food Recipes </h6>
+
+  
+
+ </div>
 
   <div class="center">
     <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
@@ -99,5 +64,25 @@
   </div>
 
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyAv-m68DqQCg5HgdSb43Hh5fNfHFBapLfM",
+    authDomain: "food-lover-pwa.firebaseapp.com",
+    databaseURL: "https://food-lover-pwa.firebaseio.com",
+    projectId: "food-lover-pwa",
+    storageBucket: "food-lover-pwa.appspot.com",
+    messagingSenderId: "1057277436684",
+    appId: "1:1057277436684:web:864d60090486b5fd"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+</script>
+<script src = '/js/db.js'></script>
+<script src ='/js/app.js'></script>
 <script src ='/js/main.js'></script>
 </html>

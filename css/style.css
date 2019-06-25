@@ -1,9 +1,3 @@
-:root{
-  --primary: #FFE9D2;
-  --secondary: #FFE1C4;
-  --title: #FF8816;
-}
-
 nav{
   background: #FFE9D2 ;
   border-bottom: 10px solid #FFE1C4;
